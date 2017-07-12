@@ -1,0 +1,124 @@
+
+<Doctype!>
+<html>
+<head>
+<meta charset="UTF-8">
+<h2 style="text-align: center; text-transform: uppercase; color: #4CAF50;">Digital Diary</h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--login form-->
+<h2>Login</h2>
+
+<form action="login.php" method ="POST">
+  <div class="imgcontainer">
+    <img src="LoginImage.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Pen Name</b></label>
+    <input type="text" placeholder="Enter PenName" id="pname" name="pnam" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id ="psw" name="psw" required>
+
+    <button type="submit">Login</button><br>
+    <input type="checkbox" checked="checked"> <label>Remember me</label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<!-- registration form-->
+
+<button onclick="document.getElementById('id01').style.display='block'">Register</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+  <link rel="stylesheet" type="text/css" media="all" href="registrail.css">
+
+  <form action="registration.php" method="POST">
+  <div class="col-2">
+    <label>
+      Pen Name
+      <input placeholder="create a penname" id="pname" name="pname" tabindex="1">
+    </label>
+  </div>
+
+  <div class="col-2">
+    <label>
+      password
+      <input type = "PASSWORD" placeholder="protect your profile with a password" id="password" name="password" tabindex="2">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      First Name
+      <input placeholder="What is your first name?" id="fname" name="fname" tabindex="3">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Last Name
+      <input placeholder="What is your last name?" id="lname" name="lname" tabindex="4">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Email
+      <input placeholder="What is your e-mail address?" id="email" name="email" tabindex="5">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Gender
+      <select name= "gender" tabindex="6">
+        <option>male</option>
+        <option>female</option>
+        <option>other</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="col-2">
+    <label>
+      Age
+      <input placeholder="whats your age?" id="age" name="age" tabindex="7">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      City
+      <input placeholder="where do you live?" id="city" name="city" tabindex="8">
+    </label>
+  </div>
+    <div class="col-3">
+    <label>
+      State
+      <input placeholder="which state?" id="state" name="state" tabindex="9">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Country
+      <input placeholder="which country are you from?" id="country" name="country" tabindex="10">
+    </label>
+  </div>
+
+  <div class="col-submit">
+    <button class="submitbtn">Create my Profile</button>
+  </div>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>
